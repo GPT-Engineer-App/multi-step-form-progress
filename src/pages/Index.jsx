@@ -70,7 +70,160 @@ const Index = () => {
           </VStack>
         )}
 
-        <HStack spacing={4}>
+        {activeStep === 1 && (
+          <VStack spacing={4} width="100%">
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>PO Number</FormLabel>
+                <Input placeholder="Enter PO Number" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>PR Number</FormLabel>
+                <Input placeholder="Enter PR Number" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Vendor Number</FormLabel>
+                <Input placeholder="Enter Vendor Number" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>PO Date</FormLabel>
+                <Input type="date" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Delivery Date</FormLabel>
+                <Input type="date" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Status</FormLabel>
+                <Input placeholder="Enter Status" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Payment Terms</FormLabel>
+                <Input placeholder="Enter Payment Terms" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Currency</FormLabel>
+                <Input placeholder="Enter Currency" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Item Material Number</FormLabel>
+                <Input placeholder="Enter Item Material Number" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Item Quantity</FormLabel>
+                <Input type="number" placeholder="Enter Item Quantity" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Item Unit Price</FormLabel>
+                <Input type="number" placeholder="Enter Item Unit Price" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Item Net Value</FormLabel>
+                <Input type="number" placeholder="Enter Item Net Value" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Item Delivery Date</FormLabel>
+                <Input type="date" />
+              </FormControl>
+            </HStack>
+          </VStack>
+        )}
+
+        {activeStep === 2 && (
+          <VStack spacing={4} width="100%">
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>GR Number</FormLabel>
+                <Input placeholder="Enter GR Number" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>PO Number</FormLabel>
+                <Input placeholder="Enter PO Number" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>GR Date</FormLabel>
+                <Input type="date" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Vendor Number</FormLabel>
+                <Input placeholder="Enter Vendor Number" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Item Material Number</FormLabel>
+                <Input placeholder="Enter Item Material Number" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Item Quantity Received</FormLabel>
+                <Input type="number" placeholder="Enter Item Quantity Received" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Item Inspection Status</FormLabel>
+                <Input placeholder="Enter Item Inspection Status" />
+              </FormControl>
+            </HStack>
+          </VStack>
+        )}
+
+        {activeStep === 3 && (
+          <VStack spacing={4} width="100%">
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Invoice Number</FormLabel>
+                <Input placeholder="Enter Invoice Number" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>PO Number</FormLabel>
+                <Input placeholder="Enter PO Number" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Invoice Date</FormLabel>
+                <Input type="date" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Vendor Number</FormLabel>
+                <Input placeholder="Enter Vendor Number" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Total Amount</FormLabel>
+                <Input type="number" placeholder="Enter Total Amount" />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Payment Terms</FormLabel>
+                <Input placeholder="Enter Payment Terms" />
+              </FormControl>
+            </HStack>
+            <HStack spacing={4} width="100%">
+              <FormControl>
+                <FormLabel>Status</FormLabel>
+                <Input placeholder="Enter Status" />
+              </FormControl>
+            </HStack>
+          </VStack>
+        )}
+
+        <HStack spacing={4} mt={8}>
           <Button onClick={handleBack} isDisabled={activeStep === 0}>
             Back
           </Button>
